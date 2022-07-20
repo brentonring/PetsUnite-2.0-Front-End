@@ -1,3 +1,20 @@
+/* ROOT COLORS */
+:root{
+  /* Palette Colors*/
+  --palette-brown: #483425;
+  --palette-teal: #00C9AC;
+  --palette-light-teal: #C3FCF1;
+  --palette-dark-green: #4C8077;
+  /* Other Colors Defined */
+  --background-color: white;
+  --text-color: black;
+  --add-button-color: rgb(124, 201, 124);
+  --edit-button-color: rgb(245, 245, 103);
+  --delete-button-color: rgb(240, 70, 70);
+  --like-button-color: rgb(200, 100, 200);
+  --comment-button-color: rgb(255, 179, 37);
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +53,94 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0.7), rgba(76, 128, 119, 0.1)), url("/public/images/krista-mangulsone-9gz3wfHr65U-unsplash.jpg");
+  background-color: #4C8077;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#home-content{
+  background-color: white;
+  text-align: center;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+#home-content h2{
+  padding-top: 30px;
+}
+#home-content p{
+  padding: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: var(--palette-brown);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 60px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  font-family: 'Lobster Two', cursive;
+}
+h2 {
+  color: var(--palette-teal);
+  font-family: 'Montserrat', sans-serif;
+}
+h2 a{
+  color: var(--palette-teal);
+}
+h2 a:hover{
+  color: var(--palette-brown);
+}
+
+/* FOOTER */
+footer{
+  margin-top: 100px;
+  background-color: white;
+}
+#copyright{
+  background-color:rgba(0, 0, 0, 0.2);
+}
+footer a:hover{
+  fill: var(--palette-dark-green);
+}
+.page-link {
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--palette-brown);
+  margin: 20px;
+  font-size: 13px;
+}
+footer hr{
+  width: 70px;
+  background-color: #00C9AC;
+  margin-top: 20px
+}
+
+.copyright {
+  background-color: white;
+  font-size: 12px;
+}
+
+.text-dark {
+  text-decoration: none;
+}
+
+h6 {
+  margin-top: 40px;
+}
+
+footer section {
+  font-family: 'Montserrat', sans-serif;
+  color: #483425;
+}
+
+footer p {
+  font-family: 'Montserrat', sans-serif;
+  color: #212529;
+}
+
