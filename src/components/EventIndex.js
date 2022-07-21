@@ -5,26 +5,20 @@ function EventIndex() {
     let [events, setEvents] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:3500/events`)
-        .then((response) => response.json())
-        .then((responseJson) => {
-            setEvents(responseJson.event_name)
-            console.log(responseJson.event_name)
-        })
-        .catch(err => {
-            console.log(err)
-        })
+        const fetchData = async () => {
+          // const response = await fetch(`${process.env.SERVER_URL}events/`)
+          const response = await fetch(`http://localhost:3500/events`)
+          const resData = await response.json()
+          setEvents(resData)
+        }
+        fetchData()
     }, [])  
 
     let eventsFormatted = events.map((event) => {
 		return (
 			<div className="col-sm-6" key={event._Id}>
-				<h2>
-					
-						{event.event_name}
-					
-				</h2>
-			
+        <h1>Event Names</h1>
+				<h2>{event.event_name}</h2>
 			</div>
 		)
 	})
