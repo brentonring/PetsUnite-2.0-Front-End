@@ -3,6 +3,8 @@ import EventIndex from './components/EventIndex';
 import Nav from './components/Nav'
 import MainBody from './components/MainBody'
 import Footer from './components/Footer'
+import ServiceIndex from './components/ServiceIndex';
+import AdoptionIndex from './components/AdoptionIndex';
 // import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 // import error404 from './components/error404'
@@ -10,10 +12,12 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className="container">
-      <Nav />
+      {/* <Nav />
       <MainBody />
-      <Footer />
+      <Footer /> */}
       <EventIndex />
+      {/* <ServiceIndex /> */}
+      {/* <AdoptionIndex /> */}
     </div>
   );
 }
