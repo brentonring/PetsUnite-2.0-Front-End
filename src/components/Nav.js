@@ -1,14 +1,14 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
+
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import '../App.css';
 
 function NavBar() {
   return (
-    <div className="navbar">
+    <div className="NavBar">
       <Navbar bg="light" expand="lg">
-          <Container>
             <Navbar.Brand href="#home"><img className="d-inline-block align-top" id="logo-img" src="/images/logo/logo50x50.png" width="50px" height="50px" alt="Green house cat and dog logo"></img></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -29,7 +29,6 @@ function NavBar() {
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
-          </Container>
         </Navbar>
     </div>
   );
