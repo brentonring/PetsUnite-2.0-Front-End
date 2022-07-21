@@ -1,7 +1,7 @@
 import './App.css';
 import EventIndex from './components/EventIndex';
 import Nav from './components/Nav'
-import MainBody from './components/MainBody'
+import HomeBody from './components/HomeBody'
 import Footer from './components/Footer'
 import ServiceIndex from './components/ServiceIndex';
 import AdoptionIndex from './components/AdoptionIndex';
