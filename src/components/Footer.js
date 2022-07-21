@@ -4,8 +4,8 @@ function Footer() {
     return (
         <div className="footer">
           <footer className="text-center text-lg-start text-dark footer">
-          <section className="footer-group pt-0">
-            <div className="container text-center text-md-start mt-5">
+          <section className="footer-group pt-3">
+            <div className="container text-center text-md-start">
               <div className="row mt-3">
                 <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                   <h6 className="text-uppercase fw-bold">About the Team</h6>
@@ -71,7 +71,7 @@ function Footer() {
                       </p>
                 </div>
                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold">Useful links</h6>
+                  <h6 className="text-uppercase fw-bold">Links</h6>
                     <hr className="mb-4 mt-0 d-inline-block mx-auto"/>
                       <p>
                         <a href="/login?" className="text-dark">Login</a>
@@ -84,7 +84,7 @@ function Footer() {
             </div>
           </section>
         <div
-            className="text-center p-3 copyright">
+            className="text-center copyright">
           © 2022 Copyright: 
           <a className="text-dark" href="https://mdbootstrap.com/"
             > MDBootstrap.com</a>
