@@ -3,8 +3,8 @@ import React from "react"
 function Footer() {
     return (
         <div className="footer">
-          <footer className="text-center text-lg-start text-dark footer">
-          <section className="footer-group pt-3">
+          <footer className="text-center text-lg-start text-dark footer pb-3">
+          <section className="footer-group pt-1">
             <div className="container text-center text-md-start">
               <div className="row mt-3">
                 <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
