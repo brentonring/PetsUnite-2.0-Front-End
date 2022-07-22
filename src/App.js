@@ -11,13 +11,15 @@ import AdoptionIndex from './components/AdoptionIndex';
 
 function App() {
   return (
-    <div className="container">
-      {/* <Nav />
-      <MainBody />
-      <Footer /> */}
-      <EventIndex />
+    <div>
+      <Nav />
+      {/* <MainBody /> */}
+      <AdoptionIndex />
       {/* <ServiceIndex /> */}
-      {/* <AdoptionIndex /> */}
+      <Footer />
+      {/* <EventIndex /> */}
+      
+      
     </div>
   );
 }

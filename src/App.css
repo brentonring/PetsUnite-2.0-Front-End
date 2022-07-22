@@ -55,7 +55,14 @@ nav ul{
 .form-inline button{
   text-align: right;
 }
-
+.me-auto{
+  font-family: 'Montserrat', sans-serif;
+  color: var(--palette-brown);
+}
+.nav-link{
+  font-family: 'Montserrat', sans-serif;
+  color: var(--palette-brown);
+}
 /* GENERAL MAIN CONTENT */
 main {
   margin-right: 20px;
@@ -116,6 +123,15 @@ img{
   padding-bottom: 10px;
 }
 
+h1 {
+  text-align: center;
+  color: var(--palette-header);
+  font-size: 70px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
 /* BUTTONS */
 .btn-primary{
   margin-top: 20px;
@@ -124,21 +140,45 @@ img{
   border-color: var(--palette-light-teal);
   color: var(--palette-dark-green);
 }
-.btn-primary:hover{
-  background-color: var(--palette-dark-green);
-  border-color: var(--palette-dark-green);
-}
-.btn-warning{
-  margin-right: 20px;
-}
 .btn-warning:hover{
   transform: scale(1.2);
 }
-.btn-danger:hover{
+.love-custom-btn{
+  margin-right: 20px;
+  background: #FBA5FF;
+  color: var(--palette-brown);
+  border: 2px solid #FBA5FF;
+  border-radius: 5px;
+  padding: 6px 12px;
+  text-transform: uppercase;
+}
+.love-custom-btn:hover{
   transform: scale(1.2);
 }
-.btn-success:hover{
+.comment-custom-btn {
+  margin-right: 20px;
+  background: #00CCFF;
+  color: var(--palette-brown);
+  border: 2px solid #00CCFF;
+  border-radius: 5px;
+  padding: 6px 12px;
+  text-transform: uppercase;
+}
+.comment-custom-btn:hover{
   transform: scale(1.2);
+}
+.custom-btn {
+  background: var(--palette-light-teal);
+  color: var(--palette-brown);
+  border: 2px solid var(--palette-light-teal);
+  border-radius: 5px;
+  padding: 8px 14px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+.custom-btn:hover{
+  background-color: white;
+  border-color: var(--palette-light-teal);
 }
 
 /* FORMS */
