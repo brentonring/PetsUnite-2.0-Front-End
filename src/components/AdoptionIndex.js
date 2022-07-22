@@ -55,7 +55,7 @@ function AdoptionIndex() {
     })
     return(
             <main className="index-main m-5">
-                <h1 className="index-header p-4">Ready for Adoption</h1>
+                <h1 className="index-header p-4" style={{fontSize:65}}>Ready for Adoption</h1>
                 <div id="main-container">
                     <div className='text-center m-3'>
                         <form method="GET" action="/adoption/new">

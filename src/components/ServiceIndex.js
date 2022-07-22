@@ -53,7 +53,7 @@ function ServiceIndex() {
     })
     return(        
             <main>
-                <h1>Pet Services Needed!</h1>
+                <h1 className="index-header p-4" style={{fontSize:65}}>Pet Services Needed!</h1>
                 <div id="main-container">
                     <div className='text-center'>
                         <form method="GET" action="/services/new">

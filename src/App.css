@@ -58,6 +58,7 @@ nav ul{
 .me-auto{
   font-family: 'Montserrat', sans-serif;
   color: var(--palette-brown);
+  font-weight: bolder;
 }
 .nav-link{
   font-family: 'Montserrat', sans-serif;
@@ -126,9 +127,7 @@ img{
 h1 {
   text-align: center;
   color: var(--palette-header);
-  font-size: 70px;
-  letter-spacing: 1px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
 }
 
