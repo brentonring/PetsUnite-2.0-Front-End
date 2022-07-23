@@ -5,7 +5,7 @@
   --palette-teal: #00C9AC;
   --palette-light-teal: #C3FCF1;
   --palette-dark-green: #4C8077;
-  --palette-header: #275F73;
+ 
   /* Other Colors Defined */
   --background-color: white;
   --text-color: black;
@@ -79,10 +79,9 @@ main {
 
 .header {
   text-align: center;
-  color: var(--palette-header);
+  color: var(--palette-brown);
   margin-top: 25px;
   margin-bottom: 25px;
-  font-size: 70px;
   letter-spacing: 3px;
   font-family: 'Lobster Two', cursive;
 }
@@ -124,9 +123,9 @@ img{
   padding-bottom: 10px;
 }
 
-h1 {
+.index-header {
   text-align: center;
-  color: var(--palette-header);
+  color: var(--palette-brown);
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
 }

@@ -9,8 +9,17 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div>
+<<<<<<< HEAD
       <NavBar/>
       <Footer/>
+=======
+      <Nav />
+      {/* <HomeBody /> */}
+      <AdoptionIndex />
+      {/* <ServiceIndex /> */}
+      {/* <EventIndex /> */}
+      <Footer />
+>>>>>>> main
     </div>
   );
 }

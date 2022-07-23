@@ -55,9 +55,9 @@ function AdoptionIndex() {
     })
     return(
             <main className="index-main m-5">
-                <h1 className="index-header p-4" style={{fontSize:65}}>Ready for Adoption</h1>
+                <h1 className="index-header p-4" style={{fontSize:40}}>Ready for Adoption</h1>
                 <div id="main-container">
-                    <div className='text-center m-3'>
+                    <div className='text-center m-4'>
                         <form method="GET" action="/adoption/new">
                             <input className='custom-btn' type="submit" value="Add a Pet"></input>
                         </form> 
