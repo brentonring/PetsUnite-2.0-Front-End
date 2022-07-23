@@ -8,6 +8,12 @@ import Home from './components/Home';
 // import AdoptionIndex from './components/adoption/index_adoption'
 // import AdoptionNew from './components/adoption/new_adoption'
 // import AdoptionShow from './components/adoption/show_adoption'
+import EventIndex from './components/EventIndex';
+import Nav from './components/Nav'
+import HomeBody from './components/HomeBody'
+import Footer from './components/Footer'
+import ServiceIndex from './components/ServiceIndex';
+import AdoptionIndex from './components/AdoptionIndex';
 
 // import EventEdit from './components/adoption/edit_adoption';
 // import EventIndex from './components/EventIndex';

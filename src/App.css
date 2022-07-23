@@ -5,6 +5,7 @@
   --palette-teal: #00C9AC;
   --palette-light-teal: #C3FCF1;
   --palette-dark-green: #4C8077;
+  --palette-header: #275F73;
   /* Other Colors Defined */
   --background-color: white;
   --text-color: black;
@@ -15,45 +16,7 @@
   --comment-button-color: rgb(255, 179, 37);
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+/* HOME PAGE */
 body{
   background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0.7), rgba(76, 128, 119, 0.1)), url("/public/images/krista-mangulsone-9gz3wfHr65U-unsplash.jpg");
   background-color: #4C8077;
@@ -72,17 +35,54 @@ body{
   padding-top: 30px;
 }
 #home-content p{
-  padding: 30px;
+  padding: 20px;
   font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-  text-align: center;
+.home-main {
+  width: 80%;
+  margin: 0 auto
+}
+/* NAV BAR */
+nav ul{
+  text-align: left;
+}
+#logo-img{
+  width: auto;
+  height: auto;
+  margin-left: 10px;
+}
+.form-inline button{
+  text-align: right;
+}
+.me-auto{
+  font-family: 'Montserrat', sans-serif;
   color: var(--palette-brown);
+  font-weight: bolder;
+}
+.nav-link{
+  font-family: 'Montserrat', sans-serif;
+  color: var(--palette-brown);
+}
+/* GENERAL MAIN CONTENT */
+main {
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+/* add and edit pages */
+#main-container{
+  background-color: white;
+  border-radius: 20px;
+}
+
+.header {
+  text-align: center;
+  color: var(--palette-header);
   margin-top: 25px;
   margin-bottom: 25px;
-  font-size: 60px;
-  font-weight: lighter;
+  font-size: 70px;
   letter-spacing: 3px;
   font-family: 'Lobster Two', cursive;
 }
@@ -95,6 +95,105 @@ h2 a{
 }
 h2 a:hover{
   color: var(--palette-brown);
+}
+.container {
+  width: 100%;
+}
+
+/* INDEX CARD CONTENT */
+img{
+  width: 100%;
+  height: auto;  
+}
+#card{
+  border: 1px solid lightgray;
+  border-radius: 2%;
+}
+#card:hover{
+  background-color: var(--palette-light-teal);
+}
+#card-content{
+  padding-bottom: 0px;
+}
+#icons{
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+#card-content-buttons{
+  padding-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--palette-header);
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+/* BUTTONS */
+.btn-primary{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--palette-light-teal);
+  border-color: var(--palette-light-teal);
+  color: var(--palette-dark-green);
+}
+.btn-warning:hover{
+  transform: scale(1.2);
+}
+.love-custom-btn{
+  margin-right: 20px;
+  background: #FBA5FF;
+  color: var(--palette-brown);
+  border: 2px solid #FBA5FF;
+  border-radius: 5px;
+  padding: 6px 12px;
+  text-transform: uppercase;
+}
+.love-custom-btn:hover{
+  transform: scale(1.2);
+}
+.comment-custom-btn {
+  margin-right: 20px;
+  background: #00CCFF;
+  color: var(--palette-brown);
+  border: 2px solid #00CCFF;
+  border-radius: 5px;
+  padding: 6px 12px;
+  text-transform: uppercase;
+}
+.comment-custom-btn:hover{
+  transform: scale(1.2);
+}
+.custom-btn {
+  background: var(--palette-light-teal);
+  color: var(--palette-brown);
+  border: 2px solid var(--palette-light-teal);
+  border-radius: 5px;
+  padding: 8px 14px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+.custom-btn:hover{
+  background-color: white;
+  border-color: var(--palette-light-teal);
+}
+
+/* FORMS */
+form {
+  display: inline;
+}
+.inactive {
+  color: gray;
+}
+.border {
+  border: 1px solid gray;
+}
+.form-group{
+  /* text-align: center; */
+  padding: 1em;
+  /* align-items: center; */
 }
 
 /* FOOTER */
@@ -143,4 +242,3 @@ footer p {
   font-family: 'Montserrat', sans-serif;
   color: #212529;
 }
-
