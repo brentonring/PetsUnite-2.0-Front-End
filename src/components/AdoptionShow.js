@@ -1,11 +1,6 @@
-// import React from "react";
+import React, { useEffect, useState } from 'react';
 
-// function showPet() {
-   
-// }
-import React, { useEffect, useState } from "react";
-
-function showPet() {
+function AdoptionShow() {
     let [shows, setShows] = useState([])
 
     useEffect(()=>{
@@ -16,5 +11,7 @@ function showPet() {
         }
         fetchData()
     },[])
+ 
+
+    }
    
-}
