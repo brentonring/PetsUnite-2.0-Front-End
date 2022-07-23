@@ -13,13 +13,11 @@ function App() {
   return (
     <div>
       <Nav />
-      {/* <MainBody /> */}
+      {/* <HomeBody /> */}
       <AdoptionIndex />
       {/* <ServiceIndex /> */}
-      <Footer />
       {/* <EventIndex /> */}
-      
-      
+      <Footer />
     </div>
   );
 }
