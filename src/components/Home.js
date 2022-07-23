@@ -1,13 +1,11 @@
 import NavBar from "./Nav";
 import Footer from "./Footer";
-import MainBody from "./MainBody";
+import HomeBody from "./HomeBody";
 
 function Home() {
     return (
       <div>
-        <NavBar />
-        <MainBody />
-        <Footer />
+        <HomeBody />
       </div> 
     );
   }
