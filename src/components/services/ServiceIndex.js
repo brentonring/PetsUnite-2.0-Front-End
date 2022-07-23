@@ -52,21 +52,21 @@ function ServiceIndex() {
         )
     })
     return(        
-            <main>
-                <h1 className="index-header p-4" style={{fontSize:65}}>Pet Services Needed!</h1>
-                <div id="main-container">
-                    <div className='text-center'>
-                        <form method="GET" action="/services/new">
-                            <input className='custom-btn' type="submit" value="Add a Service"></input>
-                        </form> 
-                    </div>
-                    <div className='container px-5'>
-                        <div className="row gx-5">
-                            {servicesFormatted}
-                        </div>
+        <main className="index-main m-5">
+            <h1 className="index-header p-4" style={{fontSize:65}}>Pet Services Needed!</h1>
+            <div id="main-container">
+                <div className='text-center'>
+                    <form method="GET" action="/services/new">
+                        <input className='custom-btn' type="submit" value="Add a Service"></input>
+                    </form> 
+                </div>
+                <div className='container px-5'>
+                    <div className="row gx-5">
+                        {servicesFormatted}
                     </div>
                 </div>
-            </main>
+            </div>
+        </main>
     )
 };
 

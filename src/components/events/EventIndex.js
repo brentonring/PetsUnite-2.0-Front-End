@@ -50,7 +50,7 @@ function EventIndex() {
 })
 
 return( 
-      <main>
+      <main className="index-main m-5">
           <h1 className="index-header p-4" style={{fontSize:65}}>Go to a Pet Event!</h1>
           <div id="main-container">
               <div className='text-center m-4'>

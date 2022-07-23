@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 function HomeBody() {
     return (
@@ -14,4 +14,4 @@ function HomeBody() {
     )
 }
 
-export default HomeBody
+export default HomeBody;
