@@ -14,21 +14,3 @@ function error404(){
 
 export default error404
 
-// EXAMPLE CODE FOR APP.JS --> SWITCH TAGS
-// import React from "react";
-// import {  Route, Switch, BrowserRouter } from 'react-router-dom'
-// import Home from '.Home';
-// import error404 from './components/error404';
-  
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <Switch>
-//         <Route exact path='/' component={Home} />
-//         <Route path="*" component={PageNotFound} />
-//       </Switch>
-//     </BrowserRouter>
-//   );
-// }
-  
-// export default App;
