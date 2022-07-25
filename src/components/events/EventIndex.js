@@ -6,6 +6,7 @@ function EventIndex() {
 
   useEffect(() => {
 		const fetchData = async () => {
+            // const response = await fetch(`${process.env.SERVER_URL}events/`)
 			const response = await fetch(`http://localhost:3500/events`)
 			const resData = await response.json()
 			setEvents(resData)
@@ -49,8 +50,8 @@ function EventIndex() {
 })
 
 return( 
-      <main className="index-main m-5">
-          <h1 className="index-header m-5" style={{fontSize:40}}>Find an Event</h1>
+      <main>
+          <h1 className="index-header m-2" style={{fontSize:40}}>Find an Event</h1>
           <div id="main-container">
               <div className='text-center m-4'>
                   <form method="GET" action="/events/new">

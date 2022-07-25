@@ -1,10 +1,10 @@
 import { useState } from "react";
-import HalfInput from "../../components/HalfInput";
-import Nav from '../../components/Nav';
-import Footer from '../../components/Footer';
-import Submit from "../../components/Submit";
+import HalfInput from "./HalfInput";
+import Nav from './Nav';
+import Footer from './Footer';
+import Submit from "./Submit";
 
-export default function newAdoption() {
+export default async function NewAdoption() {
 
     const [pet, setPet] = useState({
         animal_type: '',
@@ -30,7 +30,7 @@ export default function newAdoption() {
         })
     }
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault()
 
         await fetch(`http://localhost:3500/adoption`, {
