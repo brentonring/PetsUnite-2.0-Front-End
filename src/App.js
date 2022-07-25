@@ -15,8 +15,8 @@ function App() {
       <Nav />
       {/* <HomeBody /> */}
       <AdoptionIndex />
-      {/* <ServiceIndex /> */}
-      {/* <EventIndex /> */}
+      <ServiceIndex />
+      <EventIndex />
       <Footer />
     </div>
   );
