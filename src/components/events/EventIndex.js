@@ -6,6 +6,7 @@ function EventIndex() {
 
   useEffect(() => {
 		const fetchData = async () => {
+            // const response = await fetch(`${process.env.SERVER_URL}events/`)
 			const response = await fetch(`http://localhost:3500/events`)
 			const resData = await response.json()
 			setEvents(resData)
