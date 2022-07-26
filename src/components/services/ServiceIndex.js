@@ -21,12 +21,12 @@ function ServiceIndex() {
         return(
             <div className='col-sm-4 g-4 mt-0 mb-4'>
                 <div id="card">
-                    <div id="card-content" className='row align-items-center p-4 py-0' key={service._id}>
+                <div id="card-content" className='row align-items-center p-4 py-0 mt-4' key={service._id}>
                         <h2 className="text-center">
                             <a className= "text-decoration-none text-capitalize" href={`/services/${service._id}`} onClick={ServiceShow}> {service.service} </a>
                         </h2>
-                        <a className= "text-decoration-none" href={`/services/${service._id}`}><img className="rounded mx-auto d-block" src={service.pic} alt={service.name}></img></a>
-                            <ul className='row mx-auto d-block'>
+                        <a className= "text-decoration-none mt-3" href={`/services/${service._id}`}><img className="rounded mx-auto d-block" src={service.pic} alt={service.name}></img></a>
+                            <ul className='row mx-auto d-block mt-4'>
                                 <li className='list-group-item text-capitalize rounded'>
                                     <img id="icons" src="/images/icons/icon_bread32.png"></img>{service.breed}
                                 </li>
@@ -57,7 +57,7 @@ function ServiceIndex() {
     })
     return(        
         <main className="index-main m-5">
-            <h1 className="index-header p-4" style={{fontSize:40}}>Pet Services Needed</h1>
+            <h1 className="index-header pt-4" style={{fontSize:40}}>Pet Services Needed</h1>
             <div id="main-container">
                 <div className='text-center m-4'>
                     <form method="GET" action="/services/new">
