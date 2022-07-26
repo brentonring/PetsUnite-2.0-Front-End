@@ -9,6 +9,12 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div>
+      <Nav />
+      {/* <HomeBody /> */}
+      <AdoptionIndex />
+      <ServiceIndex />
+      <EventIndex />
+      <Footer />
       <NavBar/>
       <Footer/>
     </div>
