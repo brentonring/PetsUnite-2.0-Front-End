@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
 // import { ReactDOM } from 'react';
+import EventShow from '../events/show_events'
 
 function EventIndex() {
   let [events, setEvents] = useState([])
@@ -18,11 +19,11 @@ function EventIndex() {
     return(
       <div className='col-sm-4 g-4 mt-0 mb-4'>
           <div id="card">
-              <div id="card-content" className='row align-items-center p-4 py-0'>
+              <div id="card-content" className='row align-items-center p-4 py-0' key={event._id}>
                   <h2 className="text-center">
-                      <a className= "text-decoration-none" href={`/events/${event.id}`}> {event.event_name} </a>
+                      <a className= "text-decoration-none" href={`/events/${event._id}`} onClick={EventShow}> {event.event_name} </a>
                   </h2>
-                  <a className= "text-decoration-none" href={`/events/${event.id}`}><img className="rounded mx-auto d-block" src={event.pic} alt={event.event_name}></img></a>
+                  <a className= "text-decoration-none" href={`/events/${event._id}`}><img className="rounded mx-auto d-block" src={event.pic} alt={event.event_name}></img></a>
                   <ul className= "row mx-auto d-block">
                       <li className='list-group-item text-capitalize rounded'>
                           <img id="icons" src="/images/icons/icon_date32.png"></img>{event.date}, {event.start_time} - {event.end_time}
@@ -69,4 +70,4 @@ return(
 };
 
 
-export default EventIndex
+export default EventIndex;

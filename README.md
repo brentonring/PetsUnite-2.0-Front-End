@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# PetsUnite-2.0-Front-End
+Hello this is a social media project about pets version 2!
+You can add, edit, explore different pets to adopt, meet other pets at events, and connect to services for your precious pets. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ✨ Requirements
+* Any Operating System (ie. MacOS X, Linux, Windows)
+* Internet Browser (ie. Google Chrome)
+* Source Code Editor (ie. VSCode)
+* MongoDB Compass/Atlas
+* Postman (for Backend testing if needed)
+* npm (use npm start or nodemon to intialize the project)
 
-## Available Scripts
+# Project Plan
+- ✨ Overall idea
+     * Pet rescue/adopt- post/edit/delete available relocate pets
+         * Adoption Data: animal type, breed, gender, name, age, health history, pic url
+            * Collection/page 1- adoption
+         * Services Data: service, animal type, breed, gender, name, age, health history, pic url
+            * Collection/page 2- services (walking, pet sitting, grooming)
+         * Events Data: event name, date, time, location, pic url
+            * Collection/page 3- events (classes, meet-ups, adoption events)
+         * User Data: first name, last name, email/username, password
+            * Collection/page 4- profiles (username, passwords)
+- ✨ Name: PetsUnite
+- ✨ Model:
+     * (https://beautifultogethersanctuary.com/available-cats/?gclid=Cj0KCQjwyYKUBhDJARIsAMj9lkGVL4yQ4YWCKbrOpLFicM8EJzeVexBc4lktxWp016mjtaEw5iUCaKYaAqeEEALw_wcBv)
 
-In the project directory, you can run:
+- ✨ Design/look
+     * Styling: Bootstrap & React Bootstrap
+     * Colors: MyColor.space.com
+     * Images: Pixabay.com
+     * Font: Google Fonts
 
-### `npm start`
+- ✨ Verison 1
+     * Link: https://pets-unite.herokuapp.com/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
+## Project Wireframe/Structure:
+  * Home page- welcome page/about
+     * Navbar (7 main pages, 1 default page, 3 add, 3 edit, 3 show pages)
+        * Register page
+            * Use of the website checkboxes (adoption, services, events)
+        * Login page
+        * Home page
+        * Adoption page
+            * Add a pet button
+            * Edit a pet button
+            * Delete a pet button
+            * Like Button
+        * Services page
+            * Add a service button
+            * Edit a service button
+            * Delete a service button
+            * Like button
+            * Comment button
+        * Events page
+            * Add an event button 
+            * Edit an event button
+            * Delete an event button
+            * Going/interested buttons (Facebookesque)
+            * Comments
+        * Error page *
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
+### :hammer_and_wrench: Languages and Tools :
+ - ✨ Front-end: React, Bootstrap & React Bootstrap, CSS
+ - ✨ Back-end: Javascript (MC skeleton)
+   - Packages: Express, React, NodeJS
+   - Server-side Rendering: JSX (for testing)
+   - Node Modules (to install npm i ….):
+     * react-create-app
+     * express-react-views
+     * dotenv
+     * method-override
+     * mongoose
+     * cors
+     * body-parser
+     * react
+     * react-dom
+     * react-router-dom
+     * react-bootstrap
+     * bootstrap
+     * redux
+     * react-redux
+ - ✨ Database: MongoDb Atlas    
 
-### `npm test`
+---
+## ✨ Future Tasks✨
+ - Complete React refactoring
+ - Component Function for like button to count
+ - Component Function for comments button to count
+ - Component Filter tool for show pages
+ - Create login page and authentication Components
+ - Create personal profile page
+ - Create register page
+ - Connecting user profiles to list their additions
+ - Add Star button to favorite data elements and save starred items to profile
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 👤 Author(s)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Alissa Makligh: [@alissamak](https://github.com/alissamak)
+* Brenton Ring: [@brentonring](https://github.com/brentonring)
+* Marisol Rodriguez: [@marisoldrodriguez](https://github.com/marisoldrodriguez)
+* Katie Eells: [@kleells](https://github.com/kleells)
+* Eric Lowe: [@ericlowe25](https://github.com/ericlowe25)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📝 License
+MIT License
 
-### `npm run eject`
+Copyright (c) 2022 brentonring
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
