@@ -13,7 +13,7 @@ function ServiceShow() {
     },[])
    
 
-    }
+    
     let comments = (
         <h3>No comments yet!</h3>
     )
@@ -44,7 +44,6 @@ function ServiceShow() {
     }
 
     return (
-        <Def>
             <main>
                 <h1>Check Out This Service!</h1>
                 <div className='container text-center'>
@@ -109,7 +108,7 @@ function ServiceShow() {
                     </div>
                 </div>
             </main>
-        </Def>
     )
+}
 
-    export default ServiceShow
+export default ServiceShow

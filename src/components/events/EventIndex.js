@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react';
 // import { ReactDOM } from 'react';
-import EventShow from '../events/show_events'
+import EventShow from '../events/show_events';
+import NewEvent from './NewEvent';
 
 function EventIndex() {
   let [events, setEvents] = useState([])
@@ -56,7 +57,7 @@ return(
           <div id="main-container">
               <div className='text-center m-4'>
                   <form method="GET" action="/events/new">
-                      <input className='custom-btn' type="submit" value="Add an Event"></input>
+                      <input onClick={NewEvent} className='custom-btn' type="submit" value="Add an Event"></input>
                   </form>
               </div>
               <div className='container px-5'>

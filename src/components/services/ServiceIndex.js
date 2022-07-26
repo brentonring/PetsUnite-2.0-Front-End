@@ -1,7 +1,11 @@
 import React, { useState, useEffect} from 'react';
+import NewService from './NewService';
+import ServiceShow from './ShowService';
+import {useHistory} from 'react-router-dom';
 
 
 function ServiceIndex() {
+    const history = useHistory()
     let [services, setServices] = useState([])
 
     useEffect(() => {
@@ -17,7 +21,7 @@ function ServiceIndex() {
         return(
             <div className='col-sm-4 g-4 mt-0 mb-4'>
                 <div id="card">
-                <div id="card-content" className='row align-items-center p-4 py-0' key={service._id}>
+                    <div id="card-content" className='row align-items-center p-4 py-0' key={service._id}>
                         <h2 className="text-center">
                             <a className= "text-decoration-none text-capitalize" href={`/services/${service._id}`} onClick={ServiceShow}> {service.service} </a>
                         </h2>
@@ -57,7 +61,7 @@ function ServiceIndex() {
             <div id="main-container">
                 <div className='text-center m-4'>
                     <form method="GET" action="/services/new">
-                        <input className='custom-btn' type="submit" value="Add a Service"></input>
+                        <input onClick={NewService} className='custom-btn' type="submit" value="Add a Service"></input>
                     </form> 
                 </div>
                 <div className='container px-5'>
