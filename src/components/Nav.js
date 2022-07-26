@@ -11,6 +11,7 @@ import Home from './Home';
 import AdoptionIndex from './adoption/AdoptionIndex';
 import EventIndex from './events/EventIndex';
 import ServiceIndex from './services/ServiceIndex';
+import NewAdoption from './adoption/NewAdoption';
 
 function NavBar() {
   return (
@@ -46,6 +47,7 @@ function NavBar() {
                 <Route exact path="/adoption" component={AdoptionIndex} />
                 <Route exact path="/events" component={EventIndex} />
                 <Route exact path="/services" component={ServiceIndex} />
+                <Route exact path="/adoption/new" component={NewAdoption} />
                 {/* <Route exact path="/login" component={Login} />
                 <Route exact path="/register" component={Register} />
                 <Route exact path="/contact_us" component={ContactUs} /> */}

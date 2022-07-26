@@ -1,6 +1,13 @@
 import React, { useState, useEffect}  from 'react';
+import NewAdoption from './NewAdoption';
+import { Nav } from 'react-bootstrap';
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
+
 
 function AdoptionIndex() {
+    const history = useHistory()
+
     let [adoptions, setAdoptions] = useState([])
 
   useEffect(() => {
@@ -16,7 +23,7 @@ function AdoptionIndex() {
         return(
             <div className='col-sm-4 g-4 mt-0 mb-4'>
                 <div id="card">
-                    <div id="card-content" className='row align-items-center p-4 py-0'>
+                    <div id="card-content" className='row align-items-center p-4 py-0' key={adoption.id}>
                         <h2 className="text-center">
                             <a className= "text-decoration-none" href={`/adoption/${adoption.id}`}> {adoption.name} </a>
                         </h2>
@@ -59,8 +66,11 @@ function AdoptionIndex() {
                 <div id="main-container">
                     <div className='text-center m-4'>
                         <form method="GET" action="/adoption/new">
-                            <input className='custom-btn' type="submit" value="Add a Pet"></input>
+                            <input onClick={NewAdoption} className='custom-btn' type="submit" value="Add a Pet"></input>
                         </form> 
+                        {/* <a href="#" onClick={() => history.push("/adoption/new")}>
+                            Add Pet
+                        </a> */}
                     </div>
                     <div className='container px-5'>
                         <div className="row gx-5">
