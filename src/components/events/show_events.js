@@ -11,7 +11,7 @@ function EventShow() {
         }
         fetchData()
     },[])
-}
+
 let comments = (
     <h3 className='inactive'>
         No comments yet!
@@ -43,7 +43,6 @@ if (data.events.comments.length) {
     })
 }
 return (
-    <Def>
         <main>
             <h1>Check Out This Event!</h1>
                 <div className='container text-center'>
@@ -107,7 +106,6 @@ return (
                 </div>
             </div>
         </main>
-    </Def>
 )
-
+}
 export default EventShow

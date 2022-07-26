@@ -17,11 +17,11 @@ function ServiceIndex() {
         return(
             <div className='col-sm-4 g-4 mt-0 mb-4'>
                 <div id="card">
-                    <div id="card-content" className='row align-items-center p-4 py-0'>
+                <div id="card-content" className='row align-items-center p-4 py-0' key={service._id}>
                         <h2 className="text-center">
-                            <a className= "text-decoration-none text-capitalize" href={`/services/${service.id}`}> {service.service} </a>
+                            <a className= "text-decoration-none text-capitalize" href={`/services/${service._id}`} onClick={ServiceShow}> {service.service} </a>
                         </h2>
-                        <a className= "text-decoration-none" href={`/services/${service.id}`}><img className="rounded mx-auto d-block" src={service.pic} alt={service.name}></img></a>
+                        <a className= "text-decoration-none" href={`/services/${service._id}`}><img className="rounded mx-auto d-block" src={service.pic} alt={service.name}></img></a>
                             <ul className='row mx-auto d-block'>
                                 <li className='list-group-item text-capitalize rounded'>
                                     <img id="icons" src="/images/icons/icon_bread32.png"></img>{service.breed}

@@ -12,5 +12,5 @@ function error404(){
     )
 }
 
-export default error404
+export default error404;
 
