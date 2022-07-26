@@ -12,7 +12,7 @@ function AdoptionShow() {
         fetchData()
     },[])
  
-    }
+    
     let comments = (
         <h3 className='inactive'>
             No comments yet!
@@ -44,7 +44,6 @@ function AdoptionShow() {
         })
     }
     return (
-        <Def>
             <main>
                 <h1>I'm Ready for My New Family!</h1>  
                 <div className='container text-center'>
@@ -109,8 +108,8 @@ function AdoptionShow() {
                     </div>
                 </div>
             </main>
-        </Def>
     )
+}
 
 
     export default AdoptionShow
