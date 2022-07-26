@@ -50,13 +50,8 @@ function EventIndex() {
 })
 
 return( 
-<<<<<<< Updated upstream
-      <main>
+      <main className='index-main m-5'>
           <h1 className="index-header m-2" style={{fontSize:40}}>Find an Event</h1>
-=======
-      <main className="index-main m-5">
-          <h1 className="index-header p-4" style={{fontSize:65}}>Go to a Pet Event!</h1>
->>>>>>> Stashed changes
           <div id="main-container">
               <div className='text-center m-4'>
                   <form method="GET" action="/events/new">
