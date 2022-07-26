@@ -19,19 +19,20 @@ function EventIndex() {
     return(
       <div className='col-sm-4 g-4 mt-0 mb-4'>
           <div id="card">
-              <div id="card-content" className='row align-items-center p-4 py-0' key={event._id}>
+              <div id="card-content" className='row align-items-center p-4 py-0 mt-4' key={event._id}>
                   <h2 className="text-center">
                       <a className= "text-decoration-none" href={`/events/${event._id}`} onClick={EventShow}> {event.event_name} </a>
                   </h2>
-                  <a className= "text-decoration-none" href={`/events/${event._id}`}><img className="rounded mx-auto d-block" src={event.pic} alt={event.event_name}></img></a>
-                  <ul className= "row mx-auto d-block">
-                      <li className='list-group-item text-capitalize rounded'>
-                          <img id="icons" src="/images/icons/icon_date32.png"></img>{event.date}, {event.start_time} - {event.end_time}
-                      </li>
-                      <li className='list-group-item text-capitalize rounded'>
-                          <img id="icons" src="/images/icons/icon_location32.png"></img>{event.location}, {event.city}
-                      </li>
-                  </ul>
+                  <a className= "text-decoration-none mt-3" href={`/events/${event._id}`}>
+                    <img className="rounded mx-auto d-block" src={event.pic} alt={event.event_name}></img></a>
+                    <ul className= "row mx-auto d-block mt-4">
+                        <li className='list-group-item text-capitalize rounded'>
+                            <img id="icons" src="/images/icons/icon_date32.png"></img>{event.date}, {event.start_time} - {event.end_time}
+                        </li>
+                        <li className='list-group-item text-capitalize rounded'>
+                            <img id="icons" src="/images/icons/icon_location32.png"></img>{event.location}, {event.city}
+                        </li>
+                    </ul>
                   <div id="card-content-buttons" className='text-center mx-auto d-block'>
                       {/* future development- functional like button counting total button presses on index pages*/} 
                       <button type="submit" className="love-custom-btn mx-2 my-1">
@@ -52,7 +53,7 @@ function EventIndex() {
 
 return( 
       <main className='index-main m-5'>
-          <h1 className="index-header m-2" style={{fontSize:40}}>Find an Event</h1>
+          <h1 className="index-header pt-4" style={{fontSize:40}}>Find an Event</h1>
           <div id="main-container">
               <div className='text-center m-4'>
                   <form method="GET" action="/events/new">
@@ -68,6 +69,5 @@ return(
       </main> 
 )
 };
-
 
 export default EventIndex;
