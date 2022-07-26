@@ -1,7 +1,4 @@
 import { useState } from "react";
-// import HalfInput from "../HalfInput";
-// import TextArea from '../TextArea';
-// import Submit from "../Submit";
 import { useHistory } from "react-router-dom";
 
 export default function NewAdoption() {
