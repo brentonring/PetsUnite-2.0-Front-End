@@ -70,4 +70,4 @@ function ServiceIndex() {
     )
 };
 
-export default ServiceIndex
+export default ServiceIndex;

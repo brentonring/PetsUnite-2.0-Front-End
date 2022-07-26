@@ -50,7 +50,7 @@ function EventIndex() {
 })
 
 return( 
-      <main className="index-main m-5">
+      <main className='index-main m-5'>
           <h1 className="index-header m-2" style={{fontSize:40}}>Find an Event</h1>
           <div id="main-container">
               <div className='text-center m-4'>
@@ -69,4 +69,4 @@ return(
 };
 
 
-export default EventIndex
+export default EventIndex;
