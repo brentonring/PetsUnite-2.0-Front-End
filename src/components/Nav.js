@@ -15,7 +15,7 @@ import NewAdoption from './adoption/NewAdoption';
 import NewService from './services/NewService';
 import NewEvent from './events/NewEvent';
 import ShowAdoption from './adoption/ShowAdoption';
-import EditAdoption from './adoption/edit_adoption';
+import EditAdoption from './adoption/EditAdoption';
 
 function NavBar() {
 
@@ -56,10 +56,10 @@ function NavBar() {
                 <Route exact path="/adoption/new" component={NewAdoption} />
                 <Route exact path="/services/new" component={NewService} />
                 <Route exact path="/events/new" component={NewEvent} />
-                <Route path="/adoption/:petId" component={ShowAdoption} />
+                <Route exact path="/adoption/:petId" component={ShowAdoption} />
                 {/* <Route path="/adoption/:showId" component={ShowService} />
                 <Route path="/adoption/:eventId" component={ShowEvent} /> */}
-                {/* <Route path="/adoption/:petId/edit" component={EditAdoption} /> */}
+                <Route exact path="/adoption/:petId/edit" component={EditAdoption} />
                 {/* <Route exact path="/login" component={Login} />
                 <Route exact path="/register" component={Register} />
                 <Route exact path="/contact_us" component={ContactUs} /> */}
