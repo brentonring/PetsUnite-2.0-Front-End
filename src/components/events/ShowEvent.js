@@ -105,11 +105,7 @@ return (
                                         <label className="mt-3 mb-2" htmlFor="author">Author</label>
                                         <input id="author" name="author" className="form-control" />
                                         <label className="mt-3 mb-2" htmlFor="event">I'm interested in {event.event_name}!</label>
-<<<<<<< HEAD
-                                        <input type="checkbox" id="event" name="event" className="form-control form-check-input" />
-=======
                                         <input style={{transform: "scale(1.5)"}} type="checkbox" id="event" name="event" className="form-control form-check-input" />
->>>>>>> 802ff3ba0fb7913a5f2463469b95ed0813808c49
                                     </div>
                                     <input className='text-center custom-btn mx-auto d-block' style={{marginTop: 48, marginBottom: 7}} type='submit' value='Add Comment' />
                                 </form> 
