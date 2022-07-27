@@ -17,7 +17,7 @@ import ShowService from './services/ShowService';
 import NewEvent from './events/NewEvent';
 import ShowEvent from './events/ShowEvent';
 import ShowAdoption from './adoption/ShowAdoption';
-import EditAdoption from './adoption/edit_adoption';
+import EditAdoption from './adoption/EditAdoption';
 
 function NavBar() {
 

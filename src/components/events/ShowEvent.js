@@ -58,8 +58,8 @@ let comments = (
 //     })
 // }
 return (
-        <main>
-            <h1>Check Out This Event!</h1>
+        <main className="index-main m-5 pt-4">
+            <h1 style={{textAlign: 'center'}} className="index-header">Check Out This Event!</h1>
                 <div className='container text-center'>
                     <img style={{marginTop: 10, marginBottom: 10, borderRadius: 10, width: "60%"}} src={event.pic} />
                 </div>
@@ -108,7 +108,7 @@ return (
                                         <label className="mt-3 mb-2" htmlFor="event">I'm interested in {event.event_name}!</label>
                                         <input type="checkbox" id="event" name="event" className="form-control form-check-input" />
                                     </div>
-                                    <input className='text-center btn btn-primary mx-auto d-block' style={{marginTop: 48, marginBottom: 7}} type='submit' value='Add Comment' />
+                                    <input className='text-center custom-btn mx-auto d-block' style={{marginTop: 48, marginBottom: 7}} type='submit' value='Add Comment' />
                                 </form> 
                             </li> 
                         </div>

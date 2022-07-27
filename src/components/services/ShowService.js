@@ -61,7 +61,7 @@ function ShowService() {
 
     return (
             <main>
-                <h1>Check Out This Service!</h1>
+                <h1 style={{textAlign: 'center'}} className="index-header">Check Out This Service!</h1>
                 <div className='container text-center'>
                     <img style={{marginTop: 10, marginBottom: 10, borderRadius: 10, width: "60%"}} src={service.pic} />
                 </div>
@@ -111,7 +111,7 @@ function ShowService() {
                                         <label className="mt-3 mb-2" htmlFor="service">I'm interested in {service.name}!</label>
                                         <input type="checkbox" id="service" name="service" className="form-control form-check-input" />
                                     </div>
-                                    <input className='text-center btn btn-primary mx-auto d-block' style={{marginTop: 48, marginBottom: 7}} type='submit' value='Add Comment' />
+                                    <input className='text-center custom-btn mx-auto d-block' style={{marginTop: 48, marginBottom: 7}} type='submit' value='Add Comment' />
                                 </form> 
                             </li> 
                         </div>

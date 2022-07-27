@@ -178,6 +178,28 @@ img{
   background-color: white;
   border-color: var(--palette-light-teal);
 }
+.edit-custom-btn {
+  margin-right: 20px;
+  background:#2ECC71;
+  border: 2px solid #2ECC71;
+  border-radius: 5px;
+  padding: 6px 12px;
+  text-transform: uppercase;
+}
+.edit-custom-btn:hover{
+  transform: scale(1.2);
+}
+.delete-custom-btn {
+  margin-right: 20px;
+  background: #EC7063;
+  border: 2px solid #EC7063;
+  border-radius: 5px;
+  padding: 6px 12px;
+  text-transform: uppercase;
+}
+.delete-custom-btn:hover{
+  transform: scale(1.2);
+}
 
 /* FORMS */
 form {
