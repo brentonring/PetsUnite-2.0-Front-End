@@ -21,7 +21,7 @@ export default function NewEvent() {
     async function handleSubmit(e) {
         e.preventDefault()
 
-        await fetch(`http://localhost:3500/events`, {
+        await fetch(`${process.env.REACT_APP_SERVER_URL}events`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

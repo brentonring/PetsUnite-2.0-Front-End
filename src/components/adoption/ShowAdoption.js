@@ -9,7 +9,8 @@ function ShowAdoption() {
 
     useEffect(()=>{
         const fetchData = async () => {
-            const response = await fetch (`http://localhost:3500/adoption/${petId}`)
+            // const response = await fetch (`http://localhost:3500/adoption/${petId}`)
+            const response = await fetch(`${process.env.REACT_APP_SERVER_URL}adoption/${petId}`)
             const resData = await response.json()
             setPet(resData)
         }
@@ -25,7 +26,7 @@ function ShowAdoption() {
 	}
 
     async function deletePet() {
-		await fetch(`http://localhost:3500/adoption/${pet.petId}`, {
+		await fetch(`${process.env.REACT_APP_SERVER_URL}adoption/${pet.petId}`, {
 			method: 'DELETE'
 		})
 		history.push('/adoption')

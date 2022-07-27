@@ -22,7 +22,7 @@ function EditAdoption() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`http://localhost:3500/adoption/${petId}`)
+            const response = await fetch(`${process.env.REACT_APP_SERVER_URL}adoption/${petId}`)
             const resData = await response.json()
             setPet(resData)
         }
@@ -32,7 +32,7 @@ function EditAdoption() {
     async function handleSubmit(e) {
         e.preventDefault()
 
-        await fetch(`http://localhost:3500/adoption/${petId}`, {
+        await fetch(`${process.env.REACT_APP_SERVER_URL}adoption/${petId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
