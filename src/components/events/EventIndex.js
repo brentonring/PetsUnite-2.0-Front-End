@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
 // import { ReactDOM } from 'react';
-import EventShow from '../events/show_events';
+import EventShow from './ShowEvent';
 import NewEvent from './NewEvent';
 
 function EventIndex() {

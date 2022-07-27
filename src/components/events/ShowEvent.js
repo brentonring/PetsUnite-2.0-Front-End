@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import {useHistory, useParams} from 'react-router-dom';
 
-function EventShow() {
-    let [events, setEvents] = useState([])
+function ShowEvent() {
+    const {eventId} = useParams()
+    const history = useHistory()
+    let [event, setEvent] = useState('')
 
     useEffect(()=>{
         const fetchData = async () => {
-            const response = await fetch ('http://localhost:3500/events')
+            const response = await fetch (`http://localhost:3500/events/${eventId}`)
             const resData = await response.json()
-            setEvents(resData)
+            setEvent(resData)
         }
         fetchData()
     },[])
@@ -46,14 +49,14 @@ return (
         <main>
             <h1>Check Out This Event!</h1>
                 <div className='container text-center'>
-                    <img style={{marginTop: 10, marginBottom: 10, borderRadius: 10, width: "60%"}} src={data.events.pic} />
+                    <img style={{marginTop: 10, marginBottom: 10, borderRadius: 10, width: "60%"}} src={event.pic} />
                 </div>
                 <div className='container'>
                     <div className="row">
                         <div className="form-group col-sm-6">
                             <li className='list-group-item text-capitalize rounded'>
-                                <h2>{data.events.event_name}</h2>
-                                <p style={{textTransform: 'none'}}>{data.events.event_details}</p>
+                                <h2>{event.event_name}</h2>
+                                <p style={{textTransform: 'none'}}>{event.event_details}</p>
                             </li>
                             <li className='list-group-item text-capitalize rounded'>
                                 <img id="icons" src="/images/icons/icon_date32.png"/>{data.events.date}
@@ -108,4 +111,4 @@ return (
         </main>
 )
 }
-export default EventShow
+export default ShowEvent;
