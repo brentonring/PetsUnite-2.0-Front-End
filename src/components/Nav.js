@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 
+
 import Home from './Home';
 import AdoptionIndex from './adoption/AdoptionIndex';
 import EventIndex from './events/EventIndex';
@@ -13,8 +14,12 @@ import ServiceIndex from './services/ServiceIndex';
 import NewAdoption from './adoption/NewAdoption';
 import NewService from './services/NewService';
 import NewEvent from './events/NewEvent';
+import ShowAdoption from './adoption/ShowAdoption';
+import EditAdoption from './adoption/edit_adoption';
 
 function NavBar() {
+
+
   return (
     <div className="NavBar">
         <Router>
@@ -51,6 +56,10 @@ function NavBar() {
                 <Route exact path="/adoption/new" component={NewAdoption} />
                 <Route exact path="/services/new" component={NewService} />
                 <Route exact path="/events/new" component={NewEvent} />
+                <Route path="/adoption/:petId" component={ShowAdoption} />
+                {/* <Route path="/adoption/:showId" component={ShowService} />
+                <Route path="/adoption/:eventId" component={ShowEvent} /> */}
+                {/* <Route path="/adoption/:petId/edit" component={EditAdoption} /> */}
                 {/* <Route exact path="/login" component={Login} />
                 <Route exact path="/register" component={Register} />
                 <Route exact path="/contact_us" component={ContactUs} /> */}
