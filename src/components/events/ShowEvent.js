@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import {useHistory, useParams} from 'react-router-dom';
-// import EditEvent form './edit_events';
 
 function ShowEvent() {
     const {eventId} = useParams()
@@ -18,9 +17,9 @@ function ShowEvent() {
     if (event === null) {
 		return <h1>Loading</h1>
 	}
-    // function editPet() {
-	// 	history.push(`/adoption/${pet.petId}/edit`)
-	// }
+    function editEvent() {
+	history.push(`/adoption/${eventId}/edit`)
+	}
     async function deleteEvent() {
 		await fetch(`http://localhost:3500/events/${event.eventId}`, {
 			method: 'DELETE'
@@ -58,8 +57,8 @@ let comments = (
 //     })
 // }
 return (
-        <main>
-            <h1>Check Out This Event!</h1>
+        <main className="index-main m-5 pt-4">
+            <h1 style={{textAlign: 'center'}} className="index-header">Check Out This Event!</h1>
                 <div className='container text-center'>
                     <img style={{marginTop: 10, marginBottom: 10, borderRadius: 10, width: "60%"}} src={event.pic} />
                 </div>
@@ -84,7 +83,7 @@ return (
                             </li>
                             <li className='list-group-item text-capitalize rounded'>
                                 <button type='submit' className='btn btn-success mx-2 my-1'>
-                                    <a href={`/events/${event._id}/edit`} className="text-decoration-none text-white" onClick={EditEvent}>
+                                    <a href={`/events/${event._id}/edit`} className="text-decoration-none text-white" onClick={editEvent}>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" style={{ fill: 'white' }}  className="bi bi-pencil-fill" viewBox="0 0 16 16">
                                                 <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
                                                 </svg> Edit</a></button>
@@ -106,9 +105,9 @@ return (
                                         <label className="mt-3 mb-2" htmlFor="author">Author</label>
                                         <input id="author" name="author" className="form-control" />
                                         <label className="mt-3 mb-2" htmlFor="event">I'm interested in {event.event_name}!</label>
-                                        <input type="checkbox" id="event" name="event" className="form-control form-check-input" />
+                                        <input style={{transform: "scale(1.5)"}} type="checkbox" id="event" name="event" className="form-control form-check-input" />
                                     </div>
-                                    <input className='text-center btn btn-primary mx-auto d-block' style={{marginTop: 48, marginBottom: 7}} type='submit' value='Add Comment' />
+                                    <input className='text-center custom-btn mx-auto d-block' style={{marginTop: 48, marginBottom: 7}} type='submit' value='Add Comment' />
                                 </form> 
                             </li> 
                         </div>
