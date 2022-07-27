@@ -10,7 +10,8 @@ function ServiceIndex() {
 
     useEffect(() => {
           const fetchData = async () => {
-              const response = await fetch(`http://localhost:3500/services`)
+            //   const response = await fetch(`http://localhost:3500/services`)
+              const response = await fetch(`${process.env.REACT_APP_SERVER_URL}services/`)
               const resData = await response.json()
               setServices(resData)
           }

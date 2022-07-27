@@ -8,7 +8,8 @@ function ShowEvent() {
 
     useEffect(()=>{
         const fetchData = async () => {
-            const response = await fetch (`http://localhost:3500/events/${eventId}`)
+            // const response = await fetch (`http://localhost:3500/events/${eventId}`)
+            const response = await fetch(`${process.env.REACT_APP_SERVER_URL}events/${eventId}`)
             const resData = await response.json()
             setEvent(resData)
         }
@@ -21,7 +22,7 @@ function ShowEvent() {
 	history.push(`/adoption/${eventId}/edit`)
 	}
     async function deleteEvent() {
-		await fetch(`http://localhost:3500/events/${event.eventId}`, {
+		await fetch(`${process.env.REACT_APP_SERVER_URL}events/${event.eventId}`, {
 			method: 'DELETE'
 		})
 		history.push('/events')

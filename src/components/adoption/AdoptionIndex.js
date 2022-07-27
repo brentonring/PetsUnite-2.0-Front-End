@@ -10,7 +10,8 @@ function AdoptionIndex() {
 
     useEffect(() => {
             const fetchData = async () => {
-                const response = await fetch(`http://localhost:3500/adoption`)
+                const response = await fetch(`${process.env.REACT_APP_SERVER_URL}adoption/`)
+                // const response = await fetch(`http://localhost:3500/adoption`)
                 const resData = await response.json()
                 setAdoptions(resData)
             }

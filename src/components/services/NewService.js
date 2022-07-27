@@ -21,7 +21,7 @@ export default function NewService() {
     async function handleSubmit(e) {
         e.preventDefault()
 
-        await fetch(`http://localhost:3500/services`, {
+        await fetch(`${process.env.REACT_APP_SERVER_URL}services`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

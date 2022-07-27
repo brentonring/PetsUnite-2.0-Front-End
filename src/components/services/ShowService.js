@@ -8,7 +8,8 @@ function ShowService() {
 
     useEffect(()=>{
         const fetchData = async () => {
-            const response = await fetch (`http://localhost:3500/services/${serviceId}`)
+            // const response = await fetch (`http://localhost:3500/services/${serviceId}`)
+            const response = await fetch(`${process.env.REACT_APP_SERVER_URL}services/${serviceId}`)
             const resData = await response.json()
             setService(resData)
         }
@@ -22,7 +23,7 @@ function ShowService() {
 	history.push(`/adoption/${serviceId}/edit`)
 	}
     async function deleteService() {
-		await fetch(`http://localhost:3500/services/${service.serviceId}`, {
+		await fetch(`${process.env.REACT_APP_SERVER_URL}services/${service.serviceId}`, {
 			method: 'DELETE'
 		})
 		history.push('/services')
