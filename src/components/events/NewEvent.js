@@ -33,48 +33,49 @@ export default function NewEvent() {
     }
 
     return(
-        <main id='main-container'>
+        <main className="index-main m-5 pt-4">
             <h1 style={{textAlign: 'center'}}>Unite Pet Lovers with Your Event</h1>
             <div>
                 <form onSubmit={handleSubmit}>
                     <div className='row'>
-                        <div className='form-group col-sm-6'>
+                        <div className='form-group col-sm-5 ps-5 ms-5'>
                             <label className='col-form-label' htmlFor='event_name'>Event Name</label>
                             <input className='form-control' id='event_name' name='event_name' onChange={e => setEvent({...event, event_name:e.target.value})}/>
                         </div>
-                        <div className='form-group col-sm-6'>
+                        <div className='form-group col-sm-5 ps-5 ms-5'>
                             <label className='col-form-label' htmlFor='date'>Date</label>
                             <input className='form-control' id='date' name='date'  onChange={e => setEvent({...event, date:e.target.value})}/>
                         </div>
                     </div>
                     <div className='row'>
-                        <div className='form-group col-sm-6'>
+                        <div className='form-group col-sm-5 ps-5 ms-5'>
                             <label className='col-form-label' htmlFor='start_time'>Start Time</label>
                             <input className='form-control' id='start_time' name='start_time' onChange={e => setEvent({...event, start_time:e.target.value})}/>
                         </div>
-                        <div className='form-group col-sm-6'>
+                        <div className='form-group col-sm-5 ps-5 ms-5'>
                             <label className='col-form-label' htmlFor='end_time'>End Time</label>
                             <input className='form-control' id='end_time' name='end_time' onChange={e => setEvent({...event, end_time:e.target.value})}/>
                         </div>
                     </div>
                     <div className='row'>
-                        <div className='form-group col-sm-6'>
+                        <div className='form-group col-sm-5 ps-5 ms-5'>
                             <label className='col-form-label' htmlFor='location'>Location</label>
                             <input className='form-control' id='location' name='location' placeholder='e.g. PetSmart, Reedy Creek Dog Park, etc.' onChange={e => setEvent({...event, location:e.target.value})}/>
                         </div>
-                        <div className='form-group col-sm-6'>
+                        <div className='form-group col-sm-5 ps-5 ms-5'>
                             <label className='col-form-label' htmlFor='address'>Address</label>
                             <input className='form-control' id='address' name='address' onChange={e => setEvent({...event, address:e.target.value})}/>
                         </div>
                     </div>
                     <div className='row'>
-                        <div className='form-group col-sm-6'>
+                        <div className='form-group col-sm-5 ps-5 ms-5'>
                             <label className='col-form-label' htmlFor='city'>City</label>
                             <input className='form-control' id='city' name='city' onChange={e => setEvent({...event, city:e.target.value})}/>
                         </div>
-                        <div className='form-group col-sm-6'>
+                        <div className='form-group col-sm-5 ps-5 ms-5'>
                             <label className='col-form-label' htmlFor='state'>State</label>
                             <select className='form-select' id='state' name='state' onChange={e => setEvent({...event, state:e.target.value})}>
+                                <option selected disabled hidden>Choose State</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
                                 <option value="AZ">Arizona</option>
@@ -129,16 +130,16 @@ export default function NewEvent() {
                             </select>
                         </div>
                     </div>
-                    <div className='form-group'>
+                    <div className='form-group mx-4 px-5'>
                         <label className='col-form-label' htmlFor='event_details'>Details</label>
                         <textarea className='form-control' id='event_details' name='event_details' onChange={e => setEvent({...event, event_details:e.target.value})}/>
                     </div>
-                    <div className='form-group'>
+                    <div className='form-group mx-4 px-5'>
                         <label className='col-form-label' htmlFor='pic'>Picture (optional)</label>
                         <input className='form-control' id='pic' name='pic' onChange={e => setEvent({...event, pic:e.target.value})}/>
                     </div>
-                    <div className='text-center'>
-                        <input className='btn btn-primary' type='submit' value='Add Event' />
+                    <div className='text-center pt-3 pb-4'>
+                        <input className='custom-btn' type='submit' value='Add Event' />
                     </div>       
                 </form>
             </div>
