@@ -13,7 +13,9 @@ import EventIndex from './events/EventIndex';
 import ServiceIndex from './services/ServiceIndex';
 import NewAdoption from './adoption/NewAdoption';
 import NewService from './services/NewService';
+import ShowService from './services/ShowService';
 import NewEvent from './events/NewEvent';
+import ShowEvent from './events/ShowEvent';
 import ShowAdoption from './adoption/ShowAdoption';
 import EditAdoption from './adoption/edit_adoption';
 
@@ -57,8 +59,8 @@ function NavBar() {
                 <Route exact path="/services/new" component={NewService} />
                 <Route exact path="/events/new" component={NewEvent} />
                 <Route path="/adoption/:petId" component={ShowAdoption} />
-                {/* <Route path="/adoption/:showId" component={ShowService} />
-                <Route path="/adoption/:eventId" component={ShowEvent} /> */}
+                <Route path="/adoption/:serviceId" component={ShowService} />
+                <Route path="/adoption/:eventId" component={ShowEvent} /> 
                 {/* <Route path="/adoption/:petId/edit" component={EditAdoption} /> */}
                 {/* <Route exact path="/login" component={Login} />
                 <Route exact path="/register" component={Register} />
