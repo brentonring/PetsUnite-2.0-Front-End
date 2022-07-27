@@ -1,35 +1,33 @@
 import React, { useState, useEffect}  from 'react';
 import NewAdoption from './NewAdoption';
-import { Nav } from 'react-bootstrap';
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import ShowAdoption from './ShowAdoption';
 import {useHistory} from 'react-router-dom';
 
 
 function AdoptionIndex() {
     const history = useHistory()
+    const [adoptions, setAdoptions] = useState([])
 
-    let [adoptions, setAdoptions] = useState([])
-
-  useEffect(() => {
-		const fetchData = async () => {
-			const response = await fetch(`http://localhost:3500/adoption`)
-			const resData = await response.json()
-			setAdoptions(resData)
-		}
-		fetchData()
-	}, [])
+    useEffect(() => {
+            const fetchData = async () => {
+                const response = await fetch(`http://localhost:3500/adoption`)
+                const resData = await response.json()
+                setAdoptions(resData)
+            }
+            fetchData()
+        }, [])
 
     let adoptionsFormatted = adoptions.map((adoption) => {
         return(
             <div className='col-sm-4 g-4 mt-0 mb-4'>
                 <div id="card">
-                    <div id="card-content" className='row align-items-center p-4 py-0' key={adoption.id}>
+                    <div id="card-content" className='row align-items-center p-4 py-0 mt-4' key={adoption._id}>
                         <h2 className="text-center">
-                            <a className= "text-decoration-none" href={`/adoption/${adoption.id}`}> {adoption.name} </a>
+                            <a className= "text-decoration-none" href={`/adoption/${adoption._id}`} onClick={ShowAdoption}> {adoption.name} </a>
                         </h2>
-                        <a className= "text-decoration-none" href={`/adoption/${adoption.id}`}>
+                        <a className= "text-decoration-none mt-3" href={`/adoption/${adoption._id}`} onClick={ShowAdoption}>
                             <img className="rounded mx-auto d-block" src={adoption.pic} alt={adoption.name}></img></a>
-                            <ul className='row mx-auto d-block'>
+                            <ul className='row mx-auto d-block mt-4'>
                                 <li className='list-group-item text-capitalize rounded'>
                                     <img id="icons" src="/images/icons/icon_bread32.png"></img>{adoption.breed}
                                 </li>
@@ -62,7 +60,7 @@ function AdoptionIndex() {
     })
     return(
             <main className="index-main m-5">
-                <h1 className="index-header p-4" style={{fontSize:40}}>Ready for Adoption</h1>
+                <h1 className="index-header pt-4" style={{fontSize:40}}>Ready for Adoption</h1>
                 <div id="main-container">
                     <div className='text-center m-4'>
                         <form method="GET" action="/adoption/new">
@@ -82,4 +80,4 @@ function AdoptionIndex() {
         )
 };
 
-export default AdoptionIndex
+export default AdoptionIndex;
