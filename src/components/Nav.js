@@ -58,17 +58,10 @@ function NavBar() {
                 <Route exact path="/adoption/new" component={NewAdoption} />
                 <Route exact path="/services/new" component={NewService} />
                 <Route exact path="/events/new" component={NewEvent} />
-<<<<<<< HEAD
-                <Route path="/adoption/:petId" component={ShowAdoption} />
-                <Route path="/adoption/:serviceId" component={ShowService} />
-                <Route path="/adoption/:eventId" component={ShowEvent} /> 
-                {/* <Route path="/adoption/:petId/edit" component={EditAdoption} /> */}
-=======
                 <Route exact path="/services/:serviceId" component={ShowService} />
                 <Route exact path="/events/:eventId" component={ShowEvent} /> 
                 <Route exact path="/adoption/:petId" component={ShowAdoption} />
                 <Route exact path="/adoption/:petId/edit" component={EditAdoption} />
->>>>>>> 802ff3ba0fb7913a5f2463469b95ed0813808c49
                 {/* <Route exact path="/login" component={Login} />
                 <Route exact path="/register" component={Register} />
                 <Route exact path="/contact_us" component={ContactUs} /> */}
